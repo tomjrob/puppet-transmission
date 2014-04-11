@@ -1,0 +1,10 @@
+---
+version: 3
+hierarchy:
+  - 'operatingsystem/${operatingsystem}'
+  - 'osfamily/${osfamily}'
+  - 'common'
+
+backends:
+  - yaml
+  - json

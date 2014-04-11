@@ -1,0 +1,11 @@
+name        'tomo0-transmission'
+version     '0.0.1'
+source      'https://github.com/tomo0/puppet-transmission.git'
+author      'Tom Robinson'
+summary     'Module for installing sickbeard newsreader'
+description 'Install transmission.'
+license     'Apache License, Version 2.0' '>0.0.0'
+dependency 'guilhermef/supervisor', '0.0.5'
+dependency 'puppetlabs/stdlib', '4.1.0'
+dependency 'puppetlabs/apt', '1.4.2'
+

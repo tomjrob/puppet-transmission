@@ -1,0 +1,3 @@
+---
+transmission::url: ppa:transmissionbt/ppa
+transmission::config_dir: /etc/transmission-daemon

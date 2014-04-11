@@ -1,0 +1,8 @@
+---
+transmission::user: debian-transmission
+transmission::group: debian-transmission
+
+transmission::port: 9091
+transmission::host: 0.0.0.0
+transmission::rpc_whitelist: 127.0.0.1,10.0.*.*,192.168.*.*
+  
