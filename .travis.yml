@@ -17,3 +17,5 @@ env:
   - PUPPET_VERSION="~> 3.5.0"
 matrix:
   exclude:
+script:
+  - bundle exec rake spec
