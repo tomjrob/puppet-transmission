@@ -8,6 +8,7 @@ before_install:
   - gem update --system
   - gem --version
 notifications:
+  email: never
   hipchat:
     rooms:
       secure: MngXz9HMjctxOotbS9j61+yH4FvDRW5GNxU9PiAI3JNMeqS9ypj/RrhLJJCB+Enx+6c6cEV9ecW0UHMuukq9OgphhCHgrYIgOqDAt/P7fRg8PFTKLl9IZcpKYIlinRHFtZM+hehYMQFXdfPZfknneLLWI6SEZ9PvajreQw26gz8=

@@ -27,7 +27,7 @@
 # Copyright 2014 Tom Robinson
 #
 class transmission::install_deps inherits transmission {
-  apt::ppa { $transmission::url: } ->
+  apt::ppa { '$transmission::url': } ->
   exec { 'trans_apt_update':
     command => '/usr/bin/apt-get -y update',
     path    => '/usr/bin/',

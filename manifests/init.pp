@@ -40,7 +40,7 @@ class transmission (
   $settings      = {
   }
   ,) {
-  
+  include apt
   anchor { '::transmission::begin': } ->
   class { 'transmission::install_deps': } ->
   class { 'transmission::install': } ->
