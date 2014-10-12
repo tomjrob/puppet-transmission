@@ -33,7 +33,7 @@ class transmission::install inherits transmission {
 
   # Get latest transmission from ppa source
   ensure_resource('package', transmission-daemon, {
-    ensure => 'installed'
+    ensure => 'installed' 
   }
   )
 

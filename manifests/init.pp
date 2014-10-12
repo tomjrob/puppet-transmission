@@ -41,10 +41,14 @@ class transmission (
   }
   ,) {
   include apt
-  anchor { '::transmission::begin': } ->
-  class { 'transmission::install_deps': } ->
-  class { 'transmission::install': } ->
-  class { 'transmission::config': } ~>
-  class { 'transmission::service': } ->
-  anchor { '::transmission::end': }
-}
+  include transmission::install_deps
+  include transmission::install
+  include transmission::config
+  include transmission::service
+  include transmission::exports
+  
+  Class['transmission::install_deps'] ->
+  Class['transmission::install'] ->
+  Class['transmission::config'] ~>
+  Class['transmission::service']
+  }
