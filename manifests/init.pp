@@ -45,7 +45,6 @@ class transmission (
   include transmission::install
   include transmission::config
   include transmission::service
-  include transmission::exports
   
   Class['transmission::install_deps'] ->
   Class['transmission::install'] ->
